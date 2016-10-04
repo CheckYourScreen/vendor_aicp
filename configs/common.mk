@@ -16,11 +16,7 @@ PRODUCT_PACKAGES += \
     Superuser \
     Torch \
     librs_jni \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    VisualizationWallpapers \
-    BasicDreams
+    LiveWallpapersPicker 
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
@@ -30,12 +26,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PhotoPhase \
     Trebuchet \
-    Eleven \
     CMAudioService \
     Development \
     LockClock \
     AudioFX \
-    PhotoPhase \
     CMFileManager \
     OmniSwitch \
     Profiles \
@@ -47,10 +41,6 @@ PRODUCT_PACKAGES += \
     LiveLockScreenService \
     DataUsageProvider \
     ThemeManagerService
-
-# Exchange support
-PRODUCT_PACKAGES += \
-    Exchange2
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
@@ -250,8 +240,3 @@ PRODUCT_COPY_FILES += \
 
 # -include vendor/cyngn/product.mk
 
-# AICP OTA
-ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
-PRODUCT_PACKAGES +=  \
-   AICP_OTA
-endif

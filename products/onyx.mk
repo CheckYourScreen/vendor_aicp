@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from onyx device
 $(call inherit-product, device/oneplus/onyx/device.mk)
 
-# Inherit some common AICP stuff.
+# Inherit some common stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
@@ -37,13 +37,10 @@ PRODUCT_BRAND := OnePlus
 TARGET_VENDOR := oneplus
 TARGET_VENDOR_PRODUCT_NAME := onyx
 
-# AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Vatsal K (Vatsal)"
+ 	DEVICE_MAINTAINERS="Nimit Mehta (CheckYourScreen)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
--include vendor/aicp/configs/bootanimation.mk
-
-
+-include vendor/aicp/configs/bootanimation.mk	
